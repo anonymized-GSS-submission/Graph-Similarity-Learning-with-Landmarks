@@ -6,18 +6,20 @@ Please following the https://pytorch-geometric.readthedocs.io/en/1.7.1/notes/ins
 
 ## Run our code
 To train our SGim : 
-`
+```
 python train.py --datasets AIDS700nef --gpu 0 --model SGim --name full --mode full
 
 python train.py --datasets LINUX --gpu 0 --model SGim --name full --mode full
 
 python train.py --datasets IMDBMulti --gpu 0 --model SGim --name full --mode full
-`
+```
 To train our SLL after training the SGim:
-`
+```
+cd landmark_new
+
 python landmark_xgboost.py --datasets AIDS700nef
 
 python landmark_xgboost.py --datasets LINUX
 
 python landmark_xgboost.py --datasets IMDBMulti
-`
+```
